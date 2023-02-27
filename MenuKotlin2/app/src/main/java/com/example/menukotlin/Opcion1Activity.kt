@@ -1,4 +1,4 @@
-package com.example.loginfirebasekotlin
+package com.example.menukotlin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -18,17 +18,25 @@ class Opcion1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.opcion1)
 
-        val et1=findViewById<EditText>(R.id.et1)
-        val et2=findViewById<EditText>(R.id.et2)
         val tv1=findViewById<TextView>(R.id.tv1)
         val button=findViewById<Button>(R.id.button)
 
         button.setOnClickListener {
             val et1=findViewById<EditText>(R.id.et1)
+            val et2=findViewById<EditText>(R.id.et)
+            val et3=findViewById<EditText>(R.id.et4)
+            val et4=findViewById<EditText>(R.id.et3)
+            val et5=findViewById<EditText>(R.id.et5)
             val nro1 = et1.text.toString().toInt()
             val nro2 = et2.text.toString().toInt()
-            val suma = nro1 + nro2
-            tv1.text = "Resultado: ${suma.toString()}"
+            val nro3 = et3.text.toString().toInt()
+            val nro4 = et4.text.toString().toInt()
+            val nro5 = et5.text.toString().toInt()
+            val suma = (nro1 + nro2 + nro3 + nro4 +nro5)/5
+            if(suma >= 6)
+                tv1.text = "Aprobado con: ${suma.toString()} "
+            else
+                tv1.text = "Reprobado con: ${suma.toString()} "
         }
 
     }

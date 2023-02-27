@@ -1,4 +1,4 @@
-package com.example.loginfirebasekotlin
+package com.example.menukotlin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.*
-import com.example.menukotlin.R
 
 class Opcion3Activity : AppCompatActivity() {
        override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +13,7 @@ class Opcion3Activity : AppCompatActivity() {
         setContentView(R.layout.opcion3)
 
         val et1=findViewById<EditText>(R.id.et1)
-        val et2=findViewById<EditText>(R.id.et2)
+        val et2=findViewById<EditText>(R.id.et)
         val tv1=findViewById<TextView>(R.id.tv1)
         val button=findViewById<Button>(R.id.button)
         val spinner=findViewById<Spinner>(R.id.spinner)

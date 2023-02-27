@@ -1,4 +1,4 @@
-package com.example.loginfirebasekotlin
+package com.example.menukotlin
 
 import android.content.Intent
 import android.os.Bundle
