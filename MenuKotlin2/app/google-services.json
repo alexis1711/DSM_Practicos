@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1068383081716",
+    "project_id": "logindesafiopractico",
+    "storage_bucket": "logindesafiopractico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068383081716:android:2c493ba2b98dd5bf88baa1",
+        "android_client_info": {
+          "package_name": "com.example.menukotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068383081716-u7r5jllr6qa6v3e8lmfchlb27qq732l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8woykelZiaFSo6VT8bwfAFWcMO70GEbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068383081716-u7r5jllr6qa6v3e8lmfchlb27qq732l1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
