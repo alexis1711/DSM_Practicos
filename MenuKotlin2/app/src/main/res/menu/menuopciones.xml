@@ -11,4 +11,8 @@
     <item
         android:id="@+id/opcion3"
         android:title="Calculadora" />
+    <item
+        android:id="@+id/cerrar"
+        android:title="Cerrar Sesion"
+        app:showAsAction="never"/>
 </menu>
