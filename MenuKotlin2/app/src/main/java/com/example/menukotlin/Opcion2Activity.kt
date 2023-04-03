@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.*
 import com.example.menukotlin.R
+import com.google.firebase.auth.FirebaseAuth
 
 
 class Opcion2Activity : AppCompatActivity() {
@@ -48,6 +49,15 @@ class Opcion2Activity : AppCompatActivity() {
             Toast.makeText(this, "Se seleccionó la tercer opción", Toast.LENGTH_LONG).show()
             val intent = Intent(this, Opcion3Activity::class.java)
             startActivity(intent)
+        }
+        if(id == R.id.cerrar){
+            FirebaseAuth.getInstance().signOut().also {
+                Toast.makeText(this, "Sesion cerrada", Toast.LENGTH_SHORT).show()
+
+                val intent = Intent(this, RegisterActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
         return super.onOptionsItemSelected(item)
     }

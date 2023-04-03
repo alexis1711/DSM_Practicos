@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val id = item.itemId
         if (id == R.id.opcion1) {
             Toast.makeText(this, "Se seleccionó la primer opción", Toast.LENGTH_LONG).show()
-            val intent = Intent(this, Opcion1Activity::class.java)
+            val intent = Intent(this, EstudiantesActivity::class.java)
             startActivity(intent)
         }
         if (id == R.id.opcion2) {

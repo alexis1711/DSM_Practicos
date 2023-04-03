@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <!--<EditText
         android:id="@+id/et5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,10 +29,10 @@
         android:hint="Ingrese nota 5"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et1" />
+        app:layout_constraintTop_toBottomOf="@+id/et1" />-->
 
     <EditText
-        android:id="@+id/et4"
+        android:id="@+id/et3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="184dp"
@@ -43,7 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et1" />
 
-    <EditText
+    <!--<EditText
         android:id="@+id/et3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         android:hint="Ingrese nota 4"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et1" />
+        app:layout_constraintTop_toBottomOf="@+id/et1" /> -->
 
     <EditText
         android:id="@+id/et1"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et"
+        android:id="@+id/et2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="184dp"
@@ -80,12 +80,24 @@
         app:layout_constraintTop_toBottomOf="@+id/et1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
+        android:onClick="cancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Promedio"
+        android:text="Cancelar"
         tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="20dp" />
+        tools:layout_editor_absoluteY="40dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="20dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv1"
