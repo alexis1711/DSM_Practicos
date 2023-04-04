@@ -32,14 +32,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
+        android:onClick="cancelar"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="8dp"
-        android:text="Calcular"
-        app:layout_constraintBottom_toTopOf="@+id/tv1"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="40dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="20dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv1"
